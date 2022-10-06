@@ -1,0 +1,262 @@
+{
+    "data": {
+        "myDatasets": {
+            "items": [
+                {
+                    "id": "6304e3ebb037234c1ef9824b",
+                    "translations": [
+                        {
+                            "name": "Bancos",
+                            "description": "Base de dados de bancos do Brasil",
+                            "code": "en-US"
+                        }
+                    ],
+                    "name": "Bancos",
+                    "description": "Base de dados de bancos do Brasil",
+                    "country": {
+                        "translations": [
+                            {
+                                "code": "pt-BR",
+                                "name": "Brasil"
+                            },
+                            {
+                                "code": "en-US",
+                                "name": "Brazil"
+                            }
+                        ],
+                        "name": "Brasil"
+                    }
+                },
+                {
+                    "id": "630552cf6266ae06d2c690dc",
+                    "translations": [
+                        {
+                            "name": "Base fict\u00EDcia",
+                            "description": "Base de teste fict\u00EDcia.",
+                            "code": "en-US"
+                        }
+                    ],
+                    "name": "Base fict\u00EDcia",
+                    "description": "Base de teste fict\u00EDcia.",
+                    "country": {
+                        "translations": [
+                            {
+                                "code": "pt-BR",
+                                "name": "Brasil"
+                            },
+                            {
+                                "code": "en-US",
+                                "name": "Brazil"
+                            }
+                        ],
+                        "name": "Brasil"
+                    }
+                },
+                {
+                    "id": "63062e1e75463a53f80ce534",
+                    "translations": [
+                        {
+                            "name": "Teste base fict\u00EDcia2345",
+                            "description": "Base de teste fict\u00EDcia.",
+                            "code": "en-US"
+                        }
+                    ],
+                    "name": "Teste base fict\u00EDcia2345",
+                    "description": "Base de teste fict\u00EDcia.",
+                    "country": {
+                        "translations": [
+                            {
+                                "code": "pt-BR",
+                                "name": "Brasil"
+                            },
+                            {
+                                "code": "en-US",
+                                "name": "Brazil"
+                            }
+                        ],
+                        "name": "Brasil"
+                    }
+                },
+                {
+                    "id": "63066524921c778a3e507ec9",
+                    "translations": [
+                        {
+                            "name": "Teste sem as vari\u00E1veis",
+                            "description": null,
+                            "code": "en-US"
+                        }
+                    ],
+                    "name": "Teste sem as vari\u00E1veis",
+                    "description": null,
+                    "country": {
+                        "translations": [
+                            {
+                                "code": "pt-BR",
+                                "name": "Brasil"
+                            },
+                            {
+                                "code": "en-US",
+                                "name": "Brazil"
+                            }
+                        ],
+                        "name": "Brasil"
+                    }
+                },
+                {
+                    "id": "630d4a25625a90ec24660e87",
+                    "translations": [
+                        {
+                            "name": "Setores de Fortaleza",
+                            "description": "",
+                            "code": "en-US"
+                        }
+                    ],
+                    "name": "Setores de Fortaleza",
+                    "description": "",
+                    "country": {
+                        "translations": [
+                            {
+                                "code": "pt-BR",
+                                "name": "Brasil"
+                            },
+                            {
+                                "code": "en-US",
+                                "name": "Brazil"
+                            }
+                        ],
+                        "name": "Brasil"
+                    }
+                },
+                {
+                    "id": "630e262512441254ee36c642",
+                    "translations": [
+                        {
+                            "name": "ASD3445",
+                            "description": "SAD345",
+                            "code": "en-US"
+                        }
+                    ],
+                    "name": "ASD3445",
+                    "description": "SAD345",
+                    "country": {
+                        "translations": [
+                            {
+                                "code": "pt-BR",
+                                "name": "Brasil"
+                            },
+                            {
+                                "code": "en-US",
+                                "name": "Brazil"
+                            }
+                        ],
+                        "name": "Brasil"
+                    }
+                },
+                {
+                    "id": "630ea1a8763e79f1f78bf922",
+                    "translations": [
+                        {
+                            "name": "Nova camada",
+                            "description": null,
+                            "code": "en-US"
+                        }
+                    ],
+                    "name": "Nova camada",
+                    "description": null,
+                    "country": {
+                        "translations": [
+                            {
+                                "code": "pt-BR",
+                                "name": "Brasil"
+                            },
+                            {
+                                "code": "en-US",
+                                "name": "Brazil"
+                            }
+                        ],
+                        "name": "Brasil"
+                    }
+                },
+                {
+                    "id": "630ea200763e79f1f78bf94c",
+                    "translations": [
+                        {
+                            "name": "Novo dataset",
+                            "description": "",
+                            "code": "en-US"
+                        }
+                    ],
+                    "name": "Novo dataset",
+                    "description": "",
+                    "country": {
+                        "translations": [
+                            {
+                                "code": "pt-BR",
+                                "name": "Brasil"
+                            },
+                            {
+                                "code": "en-US",
+                                "name": "Brazil"
+                            }
+                        ],
+                        "name": "Brasil"
+                    }
+                },
+                {
+                    "id": "6320780d694d72abb175be8f",
+                    "translations": [
+                        {
+                            "name": "Remove",
+                            "description": "",
+                            "code": "en-US"
+                        }
+                    ],
+                    "name": "Remove",
+                    "description": "",
+                    "country": {
+                        "translations": [
+                            {
+                                "code": "pt-BR",
+                                "name": "Brasil"
+                            },
+                            {
+                                "code": "en-US",
+                                "name": "Brazil"
+                            }
+                        ],
+                        "name": "Brasil"
+                    }
+                },
+                {
+                    "id": "63238d56ee5f33afa49a0179",
+                    "translations": [
+                        {
+                            "name": "Empresa de Maring\u00E1",
+                            "description": "Base de empresa de Maring\u00E1.",
+                            "code": "en-US"
+                        }
+                    ],
+                    "name": "Empresa de Maring\u00E1",
+                    "description": "Base de empresa de Maring\u00E1.",
+                    "country": {
+                        "translations": [
+                            {
+                                "code": "pt-BR",
+                                "name": "Brasil"
+                            },
+                            {
+                                "code": "en-US",
+                                "name": "Brazil"
+                            }
+                        ],
+                        "name": "Brasil"
+                    }
+                }
+            ],
+            "totalCount": 28,
+            "pageInfo": {
+                "hasNextPage": true
+            }
+        }
+    }
+}
