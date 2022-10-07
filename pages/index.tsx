@@ -61,11 +61,13 @@ const ResizableTitle = (
     
     let name;
     let code;
+    let description;
     let countryName;
     // debugger;
     if (item.translations && item.translations.length > 0) {
       name = item.translations[0].name;
       code = item.translations[0].code;
+      description = item.translations[0].description;
     }
 
     if (item.country 
@@ -78,6 +80,7 @@ const ResizableTitle = (
       id: item.id,
       name: name,
       code: code,
+      description: description,
       countryName: countryName
     }
 
@@ -107,17 +110,22 @@ const App: React.FC = () => {
     {
       title: 'Nome',
       dataIndex: 'name',
-      width: 100,
+      width: 250,
+    },
+    {
+      title: 'description',
+      dataIndex: ['description'],
+      width: 250,
     },
     {
       title: 'code',
       dataIndex: 'code',
-      width: 100,
+      width: 250,
     },
     {
       title: 'País',
       dataIndex: ['countryName'],
-      width: 100,
+      width: 250,
     }  
     
   ]);
