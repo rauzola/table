@@ -14,6 +14,13 @@ interface DataType {
   code?: string;
 }
 
+interface NewDataType {
+  id: string;
+  name?: string;
+  code?: string;
+  countryName?: string;
+}
+
 const ResizableTitle = (
   props: React.HTMLAttributes<any> & {
     onResize: (e: React.SyntheticEvent<Element>, data: ResizeCallbackData) => void;
@@ -48,38 +55,37 @@ const ResizableTitle = (
 
   const {data} = data1;
   const {myDatasets} = data;
-  // const test = myDatasets.items[0].translations[0];
-  // console.log(test.code)
-  // var asd = test.code
 
-  // const columns = Object.keys(a[0]||{})
-  //   .map(key => ({dataIndex: key, key, title: key}));
-
-  const {items} = myDatasets
-  console.log(items)
-
-//   for (var i = 0, l = items.length; i < l; i++) {
-//     var obj = items[i];
-//     console.log(obj)
-//     // ...
-// }
-
-
-  let newArray;
+  let newArray: NewDataType[] = [];
   myDatasets.items.forEach(function(item){
     
+    let name;
+    let code;
+    let countryName;
     // debugger;
+    if (item.translations && item.translations.length > 0) {
+      name = item.translations[0].name;
+      code = item.translations[0].code;
+    }
+
+    if (item.country 
+      && item.country.translations 
+      && item.country.translations.length > 0) {
+        countryName = item.country.translations[0].name;
+      }
+
     const newItem = {
       id: item.id,
-      name: item.name,
+      name: name,
+      code: code,
+      countryName: countryName
     }
 
+    newArray.push(newItem);
     
-
-    if (item.translations && item.translations.length > 0) {
-      console.log(item.translations[0].code);
-    }
 });
+
+console.log(newArray);
 
   // var items = myDatasets.items
 // for (let caracteristica in items){
@@ -97,28 +103,22 @@ const ResizableTitle = (
 
 
 const App: React.FC = () => {
-  const [columns, setColumns] = useState<ColumnsType<DataType>>([
+  const [columns, setColumns] = useState<ColumnsType<NewDataType>>([
     {
       title: 'Nome',
       dataIndex: 'name',
       width: 100,
     },
     {
-      title: 'Description',
-      dataIndex: 'description',
+      title: 'code',
+      dataIndex: 'code',
       width: 100,
     },
     {
       title: 'País',
-      dataIndex: ['country', 'name'],
+      dataIndex: ['countryName'],
       width: 100,
-    },
-    // {
-    //   title: 'code',
-    //   dataIndex: asd,
-    //   width: 100,
-    // }
-    
+    }  
     
   ]);
 
@@ -133,10 +133,10 @@ const App: React.FC = () => {
       setColumns(newColumns);
     };
 
-  const mergeColumns: ColumnsType<DataType> = columns.map((col, index) => ({
+  const mergeColumns: ColumnsType<NewDataType> = columns.map((col, index) => ({
     ...col,
     onHeaderCell: column => ({
-      width: (column as ColumnType<DataType>).width,
+      width: (column as ColumnType<NewDataType>).width,
       onResize: handleResize(index),
     }),
   }));
@@ -151,7 +151,7 @@ const App: React.FC = () => {
         },
       }}
       columns={mergeColumns}
-      dataSource={myDatasets?.items}
+      dataSource={newArray}
     />
   );
 };
