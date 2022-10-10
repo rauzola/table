@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import type { ResizeCallbackData } from 'react-resizable';
 import { Resizable } from 'react-resizable';
 import data1 from '../json_teste.json';
+import TableCustomizer from "../components/TableCustom";
 
 interface DataType {
   id: string;
@@ -150,17 +151,14 @@ const App: React.FC = () => {
   }));
 
   return (
-    <Table
-      rowKey={'id'}
-      bordered
-      components={{
-        header: {
-          cell: ResizableTitle,
-        },
-      }}
-      columns={mergeColumns}
-      dataSource={newArray}
-    />
+    <>
+      <TableCustomizer 
+        newArray={newArray} 
+        mergeColumns={mergeColumns}
+        ResizableTitle={ResizableTitle}
+      />
+      
+    </>
   );
 };
 
