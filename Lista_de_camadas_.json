@@ -1,0 +1,104 @@
+{
+  "data": {
+    "layerCatalogs": {
+      "items": [
+        {
+          "id": "630d4a86625a90ec24660eb1",
+          "name": "Setores de Fortaleza",
+          "description": "",
+          "type": "POLYGON",
+          "views": [
+            "OUTCITY",
+            "INCITY"
+          ]
+        },
+        {
+          "id": "630ea1a8763e79f1f78bf94a",
+          "name": "Nova camada",
+          "description": "",
+          "type": "POLYGON",
+          "views": [
+            "OUTCITY",
+            "INCITY"
+          ]
+        },
+        {
+          "id": "630ea1e4763e79f1f78bf94b",
+
+          "name": "Pré definido",
+          "description": "",
+          "type": "POLYGON",
+          "views": [
+            "INCITY"
+          ]
+        },
+        {
+          "id": "63207823694d72abb175bea3",
+          "name": "Remove",
+          "description": "",
+          "type": "POINT",        
+          "views": [
+            "OUTCITY",
+            "INCITY"
+          ]
+        },
+        {
+          "id": "63207f01442972e69dcbe58a",
+          "name": "Teste com icon",
+          "description": "",
+          "type": "POINT",
+          "views": [
+            "OUTCITY",
+            "INCITY"
+          ]
+        },
+        {
+          "id": "63238fccee5f33afa49a01a6",
+          "name": "Empresas",
+          "description": "",
+          "type": "POINT",
+          "views": [
+            "INCITY"
+          ]
+        },
+        {
+          "id": "632a40002e3f2c50f7ed4722",
+          "name": "testeData",
+          "description": "ASD",
+          "type": "POINT",
+          "views": [
+            "OUTCITY"
+          ]
+        },
+        {
+          "id": "632a428f5a39961aa634467e",
+          "name": "sad",
+          "description": "asd",
+          "type": "POINT",
+          "views": [
+            "OUTCITY"
+          ]
+        },
+        {
+          "id": "632a46935a39961aa6344866",
+          "name": "teste600",
+          "description": "teste600",
+          "type": "POINT",
+          "views": [
+            "OUTCITY"
+          ]
+        },
+        {
+          "id": "632a48585a39961aa63448de",
+          "name": "teste80",
+          "description": "teste80",
+          "type": "POINT",
+          "views": [
+            "OUTCITY"
+          ]
+        }
+      ],
+      "totalCount": 18
+    }
+  }
+}
