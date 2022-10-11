@@ -17,7 +17,8 @@ interface NewDataType {
   type?: string;
 }
 
-export default function TableCostumize({ newArray, mergeColumns, ResizableTitle }: TableProps) {
+export default function TableCostumize
+  ({ newArray, mergeColumns, ResizableTitle }: TableProps) {
   return (
     <>
       <Table

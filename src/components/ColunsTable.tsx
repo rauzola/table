@@ -1,10 +1,10 @@
 import { Resizable, ResizeCallbackData } from "react-resizable";
 import React from "react";
 
-interface TableProps {
-    width: React.SyntheticEvent<Element>, data: ResizeCallbackData;
-    height: boolean;
-    onResize: NewDataType;
+ export interface TableProps {
+    width: number;
+    height: number;
+    onResize: (e: React.SyntheticEvent<Element>, data: ResizeCallbackData) => void;
     
 }
 
