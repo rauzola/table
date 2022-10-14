@@ -13,8 +13,6 @@ interface ILayer {
     view?: string;
 }
 
-
-
 const ResizableTitle = (
     props: React.HTMLAttributes<any> & {
         onResize: (e: React.SyntheticEvent<Element>, data: ResizeCallbackData) => void;
@@ -39,45 +37,94 @@ const ResizableTitle = (
     );
 };
 
-
-
 export default function newTable() {
-
-
     const layers = data.data.layerCatalogs;
-    // console.log(layer.items[0].views.join());
+    // let newArray: ILayer[] = [];
 
-    // const newColumns = [...layer.items];
-    // newColumns[index] = {
-    //     ...newColumns[index],
-    // };
-
-
-    
-    let views = "";
-
-    for (let key in layers.items[0].views) {
-        views += layers.items[0].views[key];
-
-        console.log(key)
-        if ((parseInt(key) + 1) < layers.items[0].views.length) {
-            views += ', ';
-        }
-    }
-
-        console.log(views);
-
-        // const myArr = layers.items[0].views;
-
-        // const myArrStr = JSON.stringify(myArr);
-
-        // console.log(myArrStr);
-
-        // var objeto = JSON.parse(myArrStr);
-
-        // console.log(objeto);
+    const newArray = layers?.items?.map(({ ...item }) => ({
+        ...item,
+        views: item.views.join(', ')
+      }));
 
 
+    // layers.items.forEach(function (item) {
+    //     // console.log(item)
+    //     let views = item.views.join(', ');
+
+    //     let count = 0;
+    //     item.views.map(function (view) {
+    //         views = views.concat(view);
+    //         count++;
+
+    //         if (count + 1) < item.views.length) {
+    //             //         views += ', ';
+    //             //     }
+    //         }
+
+    //         // for (let key in item.views) {
+    //         //     debugger;
+    //         //     console.log(key);
+    //         //     views += item.views[key];
+
+    //         //     // console.log(key)
+    //         //     if ((parseInt(key) + 1) < item.views.length) {
+    //         //         views += ', ';
+    //         //     }
+    //         // }
+
+
+    //         const newItem = {
+    //             id: item.id,
+    //             name: item.name,
+    //             description: item.description,
+    //             type: item.type,
+    //             views: views
+    //         }
+    //         // console.log(newItem);
+    //         newArray.push(newItem);
+
+    //     });
+
+
+
+
+
+
+
+
+        // console.log(layers.items[0].views.join());
+        // let newColumns = [...layers.items];
+        // newColumns = {
+        //     ...newColumns,
+        // };
+
+
+
+
+        // let viewsa = [views, ...layers.items];
+        // console.log(viewsa);
+
+        // layers.items = [...layers.items]
+
+        // layers.items.push(newItem)
+
+        // let id;
+        // let name;
+        // let description;
+        // let type;
+        // let asd;
+
+
+        // const newItem = {
+        //     id: layers.items[0].id,
+        //     name: layers.items[0].name,
+        //     description: layers.items[0].description,
+        //     type: layers.items[0].type,
+        //     viewsa: viewsa
+        // }
+
+        // console.log(snewItem)
+        //   newArray.push(newItem);
 
         const columns: IColumn[] = [
             {
@@ -120,10 +167,9 @@ export default function newTable() {
         return (
             <>
                 <NewTable<ILayer>
-                    data={layers.items}
+                    data={newArray}
                     columns={columns}
                     isResizable={true}
-
                 />
             </>
         )

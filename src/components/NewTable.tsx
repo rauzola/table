@@ -10,7 +10,6 @@ type TableProps<T> = {
     isResizable: boolean;
 }
 
-
 export type IColumn = {
     title: string;
     dataIndex: string | string[];
@@ -51,10 +50,8 @@ const ResizableTitle = (
     );
 };
 
-
 export const NewTable = <T extends unknown>
     ({ data, columns, isResizable }: TableProps<T>) => {
-
 
     const [newColumns, setNewColumns] = useState<ColumnsType<IColumn>>([...columns]);
 
@@ -106,6 +103,4 @@ export const NewTable = <T extends unknown>
             </>
         )
     }
-
-
 }
